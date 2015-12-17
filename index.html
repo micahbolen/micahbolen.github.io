@@ -11,45 +11,129 @@
         html {
           background-color : rgba(0,0,0,.8);
           color            : rgba(255,255,255,1);
-          margin           : 50px auto;
-          padding          : .1rem;
+          margin           : 0 auto;
+          padding          : 0;
           font-size        : 16px;
           font-family      : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
           font-weight      : 300;
           text-align       : center;
         }
 
+        body {
+          margin  : 0 auto;
+          padding : 0 1% 0 0;
+        }
+
         h1 {
-         font-family : "Checkbook", sans-serif;
-         margin : 50px;
-         padding : 50px;
-         display : block;
-         font-size : 48px;
-         letter-spacing: 0.2em;
-         background : rgba(255,255,255,.5);
-         border : 8px dotted rgba(255,255,255,.88);
-         box-shadow : 0 0 0 15px rgba(255,255,255,.5);
-       }
+          font-family : "Checkbook", sans-serif;
+          font-size : 48px;
+          letter-spacing: 0.2em;
+        }
+
+        ul {
+          list-style-type: none;
+          position: relative;
+          margin-left : 10%;
+          display : block;
+        }
+
+        li { 
+          margin : 10px 0 10px 0;
+          font-size : 1.2rem;
+          text-align : left;
+        }
+
+        img.medium {
+          width : 50%;
+        }
+
+        .row {
+          position : relative;
+          display  : block;
+          width    : 96%;
+          margin   : 20px 2% 20px 2%;
+          padding  : 20px 0 20px 0;
+          height   : 120px;
+        }
+
+        .panel {
+           height : 120px;
+           display : block;
+           background : rgba(255,255,255,.5);
+           border : 8px dotted rgba(255,255,255,.88);
+           box-shadow : 0 0 0 15px rgba(255,255,255,.5);
+         }
+
+         .center-100 {
+          margin : 0 auto;
+          width  : 100%;
+          display : block;
+         }
+
+         .left-50 {
+          display : inline-block;
+          float   : left;
+          width   : 47%;
+          margin-right  : 2%;
+         }
+
+         .right-50 {
+          display : inline-block;
+          float   : right;
+          width   : 47%;
+          margin-right  : -15px;
+         }
+
+         .header {
+
+         }
+
+         .footer {
+
+         }
+
+         .content {
+          height : 360px;
+         }
+
+         .content .panel {
+          height : 360px;
+         }
+
+         p.footer-tagline {
+          margin-top : -23px;
+         }
+
       </style>
     </head>
     <body>
-      <h1>Micah<small>.tech</small></h1>
-      <h1><small>I do tech stuff.</small></h1>
-      <h1><small>&copy; 2015</small></h1>
-     <!--  <ul id="main-list">
-        <li>Publications
-          <ul id="publications-list">
-            <li id="getting-shit-done">
-             Getting Shit Done
-             <br /> 
-             <small>A guide.</small>
-             <br />
-             <button disabled="disabled">
-               read synopsis
-             </button>
-            </li>
-         </ul>
-       </li>
-     </ul> -->
+      <div class="row header">
+        <div class="panel center-100">
+          <h1>Micah<small>.tech</small></h1>
+        </div>
+      </div>
+      <div class="row content">
+        <div class="panel left-50">
+          <ul>
+            <li>Coming soon...</li>
+            <li><input type="checkbox" disabled="disabled"/> Projects</li>
+            <li><input type="checkbox" disabled="disabled"/> Portfolio</li>
+            <li><input type="checkbox" disabled="disabled"/> Posts</li>
+            <li><input type="checkbox" disabled="disabled"/> Talks</li>
+            <li><input type="checkbox" disabled="disabled"/> Links</li>
+            <li><input type="checkbox" disabled="disabled"/> Contact</li>
+          </ul>
+        </div>
+        <div class="panel right-50">
+          <h2>I do tech stuff.</h2>
+          <img class="medium" src="board.svg" />
+        </div>
+      </div>
+      <div class="row footer">
+        <div class="panel center-100">
+          <h1><small>&copy; 2015 Micah Delane Bolen</small></h1>
+          <p class="footer-tagline"><em>With loving support from my wonderful wife.</em></p>
+        </div>
+      </div>
     </body>
   </html>
