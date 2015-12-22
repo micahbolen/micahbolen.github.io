@@ -49,8 +49,12 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <h1>M</h1>
-  <g
+  <text x="250" y="150" 
+        font-family="Checkbook" 
+        font-size="55">
+    Micah.tech
+  </text>  
+<g
      inkscape:label="bg"
      inkscape:groupmode="layer"
      id="layer1"
