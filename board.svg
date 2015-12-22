@@ -49,11 +49,7 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <text x="250" y="150" 
-        font-family="Checkbook" 
-        font-size="55">
-    Micah.tech
-  </text>  
+   
 <g
      inkscape:label="bg"
      inkscape:groupmode="layer"
@@ -100,4 +96,13 @@
        id="path4146"
        inkscape:connector-curvature="0" />
   </g>
+ <text x="250" y="150" 
+        font-family="Checkbook" 
+        font-size="55"
+style="
+       stroke:#ffffff; 
+       fill:#ffffff;
+">
+    Micah.tech
+  </text>
 </svg>
