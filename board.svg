@@ -7,6 +7,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="500"
@@ -17,7 +18,29 @@
    inkscape:version="0.91 r13725"
    sodipodi:docname="board.svg">
   <defs
-     id="defs4" />
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4144">
+      <stop
+         style="stop-color:#0e303b;stop-opacity:1"
+         offset="0"
+         id="stop4146" />
+      <stop
+         style="stop-color:#0e303b;stop-opacity:0"
+         offset="1"
+         id="stop4148" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4144"
+       id="linearGradient4150"
+       x1="252.85715"
+       y1="1051.6478"
+       x2="252.85716"
+       y2="751.64789"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -26,8 +49,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="251.70855"
-     inkscape:cy="126.34235"
+     inkscape:cx="323.05463"
+     inkscape:cy="123.48521"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -49,60 +72,40 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-   
-<g
+  <g
      inkscape:label="bg"
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-752.36216)"
      sodipodi:insensitive="true">
     <rect
-       style="color:rgba(14,48,59,1);clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:rgba(14,48,59,1);solid-opacity:1;fill:rgba(14,48,59,1);fill-opacity:1;fill-rule:evenodd;stroke:rgba(14,48,59,1);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       id="rect4136"
+       style="clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-opacity:1;fill:url(#linearGradient4150);fill-opacity:1;fill-rule:evenodd;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="background-rectangle"
        width="555"
        height="352.85715"
        x="-12.857142"
-       y="730.93359" />
+       y="730.93359">
+      <title
+         id="title4142"
+         style="fill:url(#linearGradient4150);fill-opacity:1">Background Rectangle</title>
+    </rect>
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="nodes">
-    <circle
-       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:0.56862745;fill-rule:evenodd;stroke:#000000;stroke-width:0.3134332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:optimizeSpeed;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       id="node"
-       cx="25"
-       cy="275"
-       r="4.8432832"
-       onclick="handleNodeClick"
-       onmouseover="handleNodeMouseover"
-       onmouseout="handleNodeMouseout"
-       onmousedown="handleNodeMouseDown"
-       onmouseup="handleNodeMouseUp">
-      <desc
-         id="desc4169">A single board node.</desc>
-      <title
-         id="title4167">Node</title>
-    </circle>
-  </g>
+     inkscape:label="nodes" />
   <g
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="wires"
-     sodipodi:insensitive="true">
-    <path
-       style="fill:#ffffff;fill-opacity:0.53636367;fill-rule:evenodd;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.50454544"
-       d="M 10,300.71429 C 13.571429,300 506.42857,298.57143 506.42857,298.57143"
-       id="path4146"
-       inkscape:connector-curvature="0" />
-  </g>
- <text x="150" y="150" 
-        font-family="Checkbook" 
-        font-size="55"
-style="
-       stroke:#ffffff; 
-       fill:#ffffff;
-">
+     sodipodi:insensitive="true" />
+  <text
+     x="150"
+     y="150"
+     font-family="Checkbook"
+     font-size="55"
+     style="        stroke:#ffffff;         fill:#ffffff; "
+     id="text14">
     Micah.tech
   </text>
 </svg>
