@@ -19,6 +19,16 @@
    sodipodi:docname="board.svg">
   <defs
      id="defs4">
+      <style type="text/css">
+        @font-face {
+          font-family : Checkbook;
+          src         : url('http://micah.tech/fonts/checkbook/CHECKBK0.TTF')  format('truetype');
+        }
+
+        .title {
+          font-family : "Checkbook", sans-serif;
+        }
+     </style>
     <linearGradient
        inkscape:collect="always"
        id="linearGradient4144">
@@ -110,22 +120,13 @@
      id="layer3"
      inkscape:label="wires"
      sodipodi:insensitive="true" />
-     <defs>
-  <style type="text/css">
-   <![CDATA[
-    @font-face {
-        font-family: Checkbook;
-        src: url('fonts/checkbook/CHECKBK0.TTF');
-    }
-   ]]>
- </style>
-</defs>
   <text
      x="150"
      y="150"
+     class="title"
      font-family="Checkbook"
      font-size="55"
-     style="        stroke:#ffffff;         fill:#ffffff; "
+     style="stroke:#ffffff;fill:#ffffff;"
      id="text14">
     Micah.tech
   </text>

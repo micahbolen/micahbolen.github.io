@@ -76,6 +76,12 @@
           color : white;
         }
 
+        button.send-message-button {
+          font-size  : 1.2rem;
+          float      : right;
+          margin-top : 10px;
+        }
+
         img.medium {
           width : 640px;
           height : 480px;
@@ -85,6 +91,10 @@
           margin     : 12px auto;
           width      : 66%;
           text-align : justify;
+        }
+
+        .bold {
+          font-weight : 900;
         }
 
         .row {
@@ -138,6 +148,10 @@
           text-align : left;
          }
 
+         .header-status img {
+          border-left : 5 px solid green;
+         }
+
          .footer {
             height: 480px;
          }
@@ -155,13 +169,28 @@
           margin-top : -33px;
          }
 
+         .checkbook {
+          font-family : "Checkbook", sans-serif;
+         }
+
+         img.sidebar-avatar {
+          float        : left;
+          margin-right : 6px;
+         }
+
+         ul.sidebar li.about {
+          font-size : 0.95rem;
+         }
+
       </style>
     </head>
     <body>
       <div class="row header">
         <div class="panel center-100">
           <div class="header-status">
-            <img src="http://www.gravatar.com/avatar/5358da0d5b945e92b0cc05c4cea77e1c?s=36" />
+            <a href="http://stackexchange.com/users/169783">
+<img src="http://stackexchange.com/users/flair/169783.png?theme=dark" width="208" height="58" alt="profile for Micah Bolen on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Micah Bolen on Stack Exchange, a network of free, community-driven Q&amp;A sites">
+</a>
           </div>
           <div class="header-links">
             <a href="https://www.linkedin.com/in/micahbolen">
@@ -171,12 +200,11 @@
           <h1>
             Micah<small>.tech</small>
           </h1>
-          
         </div>
     </div>
       <div class="row content">
         <div class="panel left-25">
-          <ul>
+          <ul class="sidebar">
             <li>
               <a href="https://hackhands.com/calypso_titan/" target="_blank">
                 hack.hands()
@@ -192,13 +220,18 @@
                 GitHub 
               </a>
             </li>
-            <li>Contact:<br /><br />
+             <li class="about">
+             <img class="sidebar-avatar" src="http://www.gravatar.com/avatar/5358da0d5b945e92b0cc05c4cea77e1c?s=100" />
+            <span class="bold">Micah Bolen</span> is a developer at <a href="http://www.teksystems.com/" target="_blank">TEKsystems</a> and the creator of <span class="checkbook">M</span>icah.tech.  <br/>He is currently available for hire on both a contract
+           and temp-to-hire basis.
+          </li>
+            <li>Contact:<br/>
               <script src="https://component.kitchen/20151217173956/tutorial/packages/webcomponentsjs/webcomponents.js"></script>
 <link rel="import" href="https://component.kitchen/20151217173956/tutorial/packages/basic-autosize-textarea/basic-autosize-textarea.html">
 
-<basic-autosize-textarea minimumrows="2" placeholder="Say hi">
+<basic-autosize-textarea minimumrows="2" placeholder="Say hi...">
 </basic-autosize-textarea>
-              <button><i class="icon icon-envelope"></i></button>
+              <button class="send-message-button"><i class="icon icon-envelope"></i> Send</button>
             </li>
           </ul>
         </div>
