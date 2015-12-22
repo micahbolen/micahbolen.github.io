@@ -78,6 +78,17 @@
      id="layer1"
      transform="translate(0,-752.36216)"
      sodipodi:insensitive="true">
+     <rect
+       style="fill:#000"
+       id="background-solid-rectangle"
+       width="555"
+       height="352.85715"
+       x="-12.857142"
+       y="730.93359">
+      <title
+         id="title4142"
+         style="fill:url(#linearGradient4150);fill-opacity:1">Background Solid Rectangle</title>
+    </rect>
     <rect
        style="clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-opacity:1;fill:url(#linearGradient4150);fill-opacity:1;fill-rule:evenodd;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="background-rectangle"
@@ -99,6 +110,16 @@
      id="layer3"
      inkscape:label="wires"
      sodipodi:insensitive="true" />
+     <defs>
+  <style type="text/css">
+   <![CDATA[
+    @font-face {
+        font-family: Checkbook;
+        src: url('fonts/checkbook/CHECKBK0.TTF');
+    }
+   ]]>
+ </style>
+</defs>
   <text
      x="150"
      y="150"
@@ -107,5 +128,14 @@
      style="        stroke:#ffffff;         fill:#ffffff; "
      id="text14">
     Micah.tech
+  </text>
+  <text 
+    x="150"
+    y="225"
+    font-family="sans-serif"
+    font-size="18"
+    style="stroke:#fff;fill:#fff;"
+    id="air-status">
+    Channel currently off air.
   </text>
 </svg>

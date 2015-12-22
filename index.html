@@ -34,7 +34,7 @@
           color            : rgba(255,255,255,1);
           margin           : 0 auto;
           padding          : 0;
-          font-size        : 16px;
+          font-size        : 18px;
           font-family      : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
           font-weight      : 300;
           text-align       : center;
@@ -81,6 +81,12 @@
           height : 480px;
         }
 
+        p.block {
+          margin     : 12px auto;
+          width      : 66%;
+          text-align : justify;
+        }
+
         .row {
           position     : relative;
           display      : block;
@@ -122,6 +128,16 @@
 
          }
 
+         .header-links {
+          float      : right;
+          text-align : right;
+         }
+
+         .header-status {
+          float      : left;
+          text-align : left;
+         }
+
          .footer {
             height: 480px;
          }
@@ -143,13 +159,15 @@
     </head>
     <body>
       <div class="row header">
-<span style="position:absolute;float:right;text-align:right;margin-right:-1px;display:inline-block">
-            <a href="https://www.linkedin.com/in/micahbolen">
-               <i class="icon icon-linkedin icon-dark"></i>
-              </a>
-            </span>
         <div class="panel center-100">
-           
+          <div class="header-status">
+            <img src="http://www.gravatar.com/avatar/5358da0d5b945e92b0cc05c4cea77e1c?s=36" />
+          </div>
+          <div class="header-links">
+            <a href="https://www.linkedin.com/in/micahbolen">
+               <i class="icon icon-linkedin icon-2x icon-dark"></i>
+            </a>
+          </div> 
           <h1>
             Micah<small>.tech</small>
           </h1>
@@ -160,12 +178,12 @@
         <div class="panel left-25">
           <ul>
             <li>
-              <a href="https://hackhands.com/calypso_titan/">
+              <a href="https://hackhands.com/calypso_titan/" target="_blank">
                 hack.hands()
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/micahbolen">
+              <a href="https://www.linkedin.com/in/micahbolen" target="_blank">
                LinkedIn
               </a>
             </li>            
@@ -196,15 +214,25 @@
       </div>
       <div class="row">
         <div class="panel center-100">
+          <h2>Escher Puzzle</h2>
           <base target="_blank" />
-<iframe width="400" height="215" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"    src="http://micahbolen.github.io/demoscene/">
-</iframe>
+<img class="medium" src="https://camo.githubusercontent.com/c6c8095b8c16c5fed015811349b07a472565dbb3/68747470733a2f2f646576656c6f7065722e63646e2e6d6f7a696c6c612e6e65742f6d656469612f75706c6f6164732f64656d6f732f6d2f692f6d69636168626f6c656e2f39343534633634323235343365383063346165613239333537376364623362302f313433393936373635365f73637265656e73686f745f312e706e67" />
 <br />
-<small>
- <a href="http://micahbolen.github.io/demoscene/" target="_blank" style="color:#FFFFFF;text-align:left">
+
+ <a href="http://micahbolen.github.io/demoscene/" target="_blank">
   Open in new tab
  </a>
-</small>
+ <br />
+ <a href="https://github.com/micahbolen/demoscene" target="_blank">
+  Source Code
+ </a>
+
+<p class="block">
+  A WebGL 3d visualization inspired by <a href="http://warehouse13.wikia.com/wiki/Escher_Vault" target="_blank">the Escher Vault</a> that appears in the TV show, <em>Warehouse 13</em>.
+</p>
+<p class="block">
+  Three.js is used to ease the burden of setting up the scene and rendering all models, shaders, lighting, filters, and textures.  However, much of the underlying logic for the visualization is original work.
+  </p>
         </div>
       </div>
       <div class="row footer">
