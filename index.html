@@ -152,9 +152,11 @@
             <li><input type="checkbox" disabled="disabled"/> Talks</li>
             <li><input type="checkbox" disabled="disabled"/> Links</li>
             <li><input type="checkbox" disabled="disabled"/> Contact<br />
-              <basic-autosize-textarea>
-                Leave a message.
-              </basic-autosize-textarea>
+              <script src="https://component.kitchen/20151217173956/tutorial/packages/webcomponentsjs/webcomponents.js"></script>
+<link rel="import" href="https://component.kitchen/20151217173956/tutorial/packages/basic-autosize-textarea/basic-autosize-textarea.html">
+
+<basic-autosize-textarea minimumrows="2" placeholder="Leave a message.">
+</basic-autosize-textarea>
               <button>Send</button>
             </li>
           </ul>
