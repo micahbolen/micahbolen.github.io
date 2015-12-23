@@ -289,42 +289,42 @@ from random import randrange
 # Write a function that generates a string that is 28 characters long by 
 # choosing random letters from the 26 letters in the alphabet plus the space.
 def generate():
-stringLength = 28
-stringList = list(range(0, stringLength))
-letters = 'abcdefghijklmnopqrstuvwxyz'
-space = ' '
-seedList = list(letters + space)
+  stringLength = 28
+  stringList = list(range(0, stringLength))
+  letters = 'abcdefghijklmnopqrstuvwxyz'
+  space = ' '
+  seedList = list(letters + space)
 
-position = 0
+  position = 0
 
-while position < stringLength:
-  stringList[position] = seedList[randrange(0, len(seedList))]
-  position += 1
+  while position < stringLength:
+    stringList[position] = seedList[randrange(0, len(seedList))]
+    position += 1
 
-string = ''.join(stringList)
+  string = ''.join(stringList)
 
-return string
+  return string
 
 # Write another function that will score each generated string by comparing the 
 # randomly generated string to the goal.
 def score(submission):
-score = 0
-matchingCharacters = 0
-goal = 'methinks it is like a weasel'
+  score = 0
+  matchingCharacters = 0
+  goal = 'methinks it is like a weasel'
+  
+  position = 0
 
-position = 0
+  while position < len(goal):
+    if submission[position] == goal[position]:
+      matchingCharacters += 1
 
-while position < len(goal):
-  if submission[position] == goal[position]:
-    matchingCharacters += 1
+    position += 1
 
-  position += 1
+  # since we are using Python < 3, we need to import the division module
+  # to make sure that integer division results in a floating point value
+  score = (matchingCharacters / len(goal)) * 100
 
-# since we are using Python < 3, we need to import the division module
-# to make sure that integer division results in a floating point value
-score = (matchingCharacters / len(goal)) * 100
-
-return score
+  return score
 
 
 # Write a third function that will repeatedly call generate and score, then if 
@@ -333,27 +333,27 @@ return score
 # program's progress this third function should print out the best string 
 # generated so far and its score every 1000 tries.
 def test(maxTries = 20000):
-progress = 0
-bestScoreSoFar = 0
+  progress = 0
+  bestScoreSoFar = 0
 
-while progress < maxTries:
-  testString = generate()
-  testScore = score(testString)
-  progress += 1
+  while progress < maxTries:
+    testString = generate()
+    testScore = score(testString)
+    progress += 1
 
-  if testScore > bestScoreSoFar:
-    bestScoreSoFar = testScore
+    if testScore > bestScoreSoFar:
+      bestScoreSoFar = testScore
 
-  if testScore == 100:
-    print('Match found on the %i try' % progress)
-    print('The test string is in fact %s' % testString)
-    return
-  elif progress % 1000 == 0:
-    print('Progress: %i strings tested so far' % progress)
-    print('Best score so far: %f' % bestScoreSoFar)
-    
+    if testScore == 100:
+      print('Match found on the %i try' % progress)
+      print('The test string is in fact %s' % testString)
+      return
+    elif progress % 1000 == 0:
+      print('Progress: %i strings tested so far' % progress)
+      print('Best score so far: %f' % bestScoreSoFar)
+      
 
-return
+  return
 </code></pre>
         </div>
       </div>
