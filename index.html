@@ -209,6 +209,10 @@
       <link rel="stylesheet" href="css/atelier-dune-dark.css">
       <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
       <script>hljs.initHighlightingOnLoad();</script>
+      <!-- Load dependent stylesheets. -->
+   <link href="//vjs.zencdn.net/4.5/video-js.css" rel="stylesheet">
+   <link rel="stylesheet" href="node_modules/videojs-ima/src/videojs.ads.css" />
+   <link rel="stylesheet" href="node_modules/vdeojs-ima/src/videojs.ima.css" />
     </head>
     <body>
       <div class="row header">
@@ -233,8 +237,8 @@
           </div>
         </div>
     </div>
-    <div class="row header">
-      <div class="panel center-100">
+    <div class="row header" style="display:none">
+    <div class="panel center-100"
         <!-- Body -->
         <ins class="adsbygoogle"
              style="display:block"
@@ -244,6 +248,16 @@
         <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Micah.tech -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-6940674424150679"
+     data-ad-slot="6671800944"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
       </div>
     </div>
       <div class="row content">
@@ -280,7 +294,35 @@
         </div>
         <div class="panel right-75">
           <h2>I do tech stuff.</h2>
-          <iframe width="640" height="480" src="http://www.youtube.com/embed/PGk0TWSe9_8" frameborder="0" allowfullscreen></iframe>
+          <!-- <iframe width="640" height="480" src="http://www.youtube.com/embed/PGk0TWSe9_8" frameborder="0" allowfullscreen></iframe> -->
+          <div id="ima-sample-videoplayer" style="margin:0 auto; text-align:center">
+               <video id="content_video" class="video-js vjs-default-skin" style="margin: 0 auto; text-align: center"
+                   controls preload="auto" width="640" height="360">
+                 <source src="http://rmcdn.2mdn.net/Demo/vast_inspector/android.mp4" type="video/mp4" ></source>
+               </video>
+             </div>
+
+             <!-- Declare a div where you want the companion to appear. Use
+                   googletag.display() to make sure the ad is displayed. -->
+             <div id="ima-sample-companionDiv">
+               <script type="text/javascript">
+                 // Using the command queue to enable asynchronous loading.
+                 // The unit will not actually display now - it will display when
+                 // the video player is displaying the ads.
+                 googletag.cmd.push(function() { googletag.display('companionDiv'); });
+               </script>
+             </div>
+
+             <div id="ima-sample-console">
+             Ads by Google
+             </div>
+        <!-- Load dependent scripts -->
+        <script src="//vjs.zencdn.net/4.5/video.js"></script>
+        <script src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+        <!-- <script src="node_modules/videojs-ima/src/videojs.ads.js"></script> -->
+        <script src="node_modules/videojs-ima/src/videojs.ima.js"></script>
+
+        <script src="src/player.js"></script>
         </div>
       </div>
       <div id="20-december-2015-the-infinite-monkey-theorem" class="row">
