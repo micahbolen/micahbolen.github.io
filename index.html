@@ -334,6 +334,61 @@
           </div> -->
         </div>
       </div>
+      <div id="31-december-2015-find-the-minimum" class="row">
+        <div class="panel center-100">
+          <span class="entry-date">
+            31 December 2015
+          </span>
+          <h2>Find The Minimum</h2>
+          <pre><code class="python">
+# Write two Python functions to find the minimum number in a list.
+
+# The first function should compare each number to every other number on the
+# list. O(n2).
+def compareNumbers(numberList):
+    print('Comparing numbers...')
+    print(numberList)
+
+    i = 0
+    j = 1
+
+    minimumNumber = numberList[0]
+
+    for number1 in numberList:
+        if(j < len(numberList) - 1):
+            number2 = numberList[j]
+
+        if(i == 0):
+            minimumNumber = number1
+
+        if(j % 2 == 0):
+            print('Comparing ' + str(number1) + ' and ' + str(number2) + '...')
+            minimumInCurrentPair = findMinimum(number1, number2)
+            print('The minimum number in the list currently is: ')
+            print(minimumNumber)
+            if(minimumInCurrentPair < minimumNumber):
+                minimumNumber = minimumInCurrentPair
+
+        j += 1
+        i += 1
+
+    print('The minimum number in the entire list is: ')
+    return minimumNumber
+
+# The second function should be linear O(n).
+def findMinimum(firstNumber, secondNumber):
+    if(firstNumber > secondNumber) :
+        print('The first number is greater than the second number.')
+        return secondNumber
+    elif(firstNumber < secondNumber):
+        print('The first number is less than the second number.')
+        return firstNumber
+    else :
+        print('The first number is equal to the second number.')
+        return firstNumber
+
+        </div>
+      </div>
       <div id="20-december-2015-the-infinite-monkey-theorem" class="row">
         <div class="panel center-100">
           <span class="entry-date">
